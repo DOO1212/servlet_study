@@ -1,11 +1,13 @@
 package com.gn.controller;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 /**
  * Servlet implementation class LogServlet
@@ -26,7 +28,9 @@ public class LogServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+        // guestbook.jsp로 포워딩
+        RequestDispatcher dispatcher = request.getRequestDispatcher("views/Log.jsp");
+        dispatcher.forward(request, response);
 	}
 
 	/**

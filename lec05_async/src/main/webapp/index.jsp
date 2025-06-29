@@ -79,7 +79,7 @@
 	</button>
 	<div id="btnPost_div"></div>
 	<script>
-		$(function() {
+
 			$("#btnPost").click(function() {
 				
 				const kor = $("#kor").val();
@@ -103,7 +103,7 @@
 					}
 				});
 			});
-		});
+
 	</script>
 	
 <!-- <div id="resultArea"></div> -->
