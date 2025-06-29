@@ -28,7 +28,7 @@
         const name = $("#name").val().trim();
         const message = $("#message").val().trim();
 
-        $("#text_box").append("<div>" + "이름 : " + name + "내용 : " + message + "</div>" +
+        $("#text_box").after("<div>" + "이름 : " + name + "내용 : " + message + "</div>" +
         		<%= new Date().getHours() %>);
 
         $("#name").val("");
