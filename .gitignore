@@ -8,3 +8,5 @@ bin
 out
 *.iml
 Servers/
+/build/
+.properties
