@@ -14,4 +14,23 @@ public class StudentService {
 		return list;
 	}
 	
+	public Student getStudentDetail(int studentNo) {
+		Student student = dao.selectOne(studentNo);
+		return student;
+	}
+	
+	public int insertStudent(String name, int age){
+		// 1. Map : DTO에 없는 필드가 있을 경우, 3개 이하
+		// 2. DTO(Student)
+		Student param = new Student();
+		param.setStudentName(name);
+		param.setStudentAge(age);
+		
+		return dao.insert(param);
+	}
+	
+	// 수정 -> 번호,이름, 나이 전달 받아올꺼에요
+	// DAO한테 부탁할때는 Student 바구니에 담아서 전달할꺼에요.
+	// 결과는 int로 반환받고 싶어요~
+	
 }

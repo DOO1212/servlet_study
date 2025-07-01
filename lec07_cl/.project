@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>lec07</name>
+	<name>lec07_cl</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -20,7 +20,6 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
-
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.jem.workbench.JavaEMFNature</nature>

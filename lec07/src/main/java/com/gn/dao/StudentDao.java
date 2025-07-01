@@ -15,4 +15,29 @@ public class StudentDao {
 		session.close();
 		return list;
 	}
+	
+	public Student selectOne(int studentNo) {
+		SqlSession session = SessionTemplate.getSqlSession(true);
+		Student student = session.selectOne("com.gn.mapper.StudentMapper.selectOne",studentNo);
+		session.close();
+		return student;
+	}
+	
+	public int insert(Student param){
+		SqlSession session = SessionTemplate.getSqlSession(true);
+		int result = session.insert("com.gn.mapper.StudentMapper.insert",param);
+		session.close();
+		return result;
+	}
+	
+	// Service한테 Student를 전달받았어요.
+	// 전달받은 정보를 가지고 update 하고 싶어요.
+	
+	public 
+	
+	
+	
+	
+	
+	
 }
