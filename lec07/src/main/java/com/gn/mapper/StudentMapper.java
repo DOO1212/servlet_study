@@ -9,19 +9,12 @@ public interface StudentMapper {
 	
 	Student selectOne(int studentNo);
 	
-	int insert (Student param);
-
+	int insert(Student param);
+	
 	// 메소드명 : updateStudent
 	// 반환형 : int
 	// 매개변수 : Student student
-
-
-
-
-
-
-}
-
-
+	int updateStudent(Student student);
 	
-
+	int deleteStudent(int no);
+}
